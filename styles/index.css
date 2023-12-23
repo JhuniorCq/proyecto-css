@@ -1,0 +1,44 @@
+.subtitulo {
+    text-align: center;
+    padding: 15px 0;
+    margin: 0;
+}
+
+.contenedor {
+    max-width: 100%; /*Esto porseacaso una imagen quiera salirse del contenedor*/
+    margin: 10px auto 30px auto;
+    padding: 30px;
+    overflow: hidden;
+
+}
+
+.titulo-contenedor {
+    text-align: center;
+}
+
+.imagen {
+    border-radius: 20px;
+    max-width: 25%;
+    width: 30vh;
+    float: right;
+    margin: 0 0 20px 20px;
+}
+
+.imagen2 {
+    border-radius: 20px;
+    max-width: 25%;
+    width: 30vh;
+    float: left;
+    margin: 5px 20px 15px 0;
+}
+
+.parrafo {
+    margin: 25px 50px;
+    text-align: justify;
+}
+
+.contenedor2 {
+    max-width: 100%;
+    overflow: hidden;
+}
+

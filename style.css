@@ -1,1 +1,70 @@
 /* Este CSS contendrá los Estilos Básicos que se repetirán en cada archivo HTML */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Alegreya', serif;
+    font-family: 'Bitter', serif;
+}
+
+body {
+    /* background-color: aliceblue; */
+    background: linear-gradient(to right, #000000, #001F3F);
+    color: white;
+}
+
+header {
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+.titulo {
+    margin: 0;
+    padding: 15px 0;
+    background-color: black;
+    color: white;
+}
+
+nav {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+ul {
+    background-color: rgba(0, 0, 0, 0.822);
+    list-style-type: none;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    border-right: 1px solid white;
+}
+
+li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+}
+
+.activo {
+    background: linear-gradient(to right, #000000, #001F3F);
+}
+
+li a:hover:not(.activo) {
+    background: linear-gradient(to right, #121212, #003366);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin: 0;
+    border-top: 1px solid white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
