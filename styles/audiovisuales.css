@@ -1,0 +1,70 @@
+
+header {/*Este z-index estará en este CSS no más, para resolver el tema de que el Video sale encima del Header*/
+    z-index: 1;
+}
+
+.contenedor {
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+
+.titulo-seccion {
+    text-align: center;
+    margin: 40px 0 0 0;
+    font-style: italic;
+}
+
+/* ESTILOS PARA LA SECCIÓN DE VIDEOS */
+.videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 0; /*Pongo esto porque sino los videos se ponen encima del header*/
+    width: 100%; /*Con eso nos aseguramos que tendrá el 100% del ancho de su Padre*/
+}
+
+.video video {
+    width: 640px;
+    height: 460px;
+}
+
+.video p {
+    text-align: center;
+    margin: 12px 0 0 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.video:hover p {
+    opacity: 1;
+}
+
+/* ESTILOS PARA LA SECCIÓN DE IMÁGENES */
+.imagenes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.imagen {
+    margin-top: 30px
+}
+
+.imagen p {
+    text-align: center;
+    padding: 12px 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.imagen:hover p {
+    opacity: 1;
+}

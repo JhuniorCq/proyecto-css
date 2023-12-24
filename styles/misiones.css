@@ -1,0 +1,42 @@
+
+.contenedor {
+    max-width: 100%; /*Esto porseacaso una imagen quiera salirse del contenedor*/
+    margin: 10px auto 30px auto;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center; /*Aparentemente no hace nada, pero es porque el Alto del Div es el alto de la Tabla*/
+}
+
+table {
+    border: 1px solid white;
+    border-collapse: collapse;
+    font-size: 1rem;
+}
+
+.primera-fila {
+    background-color: rgb(36, 35, 35);
+}
+
+.encabezado-fila {
+    background-color: rgb(85, 82, 82);
+}
+
+td {
+    background-color: rgb(99, 96, 96);
+}
+
+td:hover {
+    background-color: black;
+    color: white;
+}
+
+table tr:not(.primera-fila) {
+    background-color: rgb(99, 96, 96);
+}
+
+th, td {
+    border: 1px solid white;
+    padding: 10px;
+    text-align: center;
+}

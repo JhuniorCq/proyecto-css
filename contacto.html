@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Robotsin</title>
+        <title>LunaBot</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="styles/contacto.css">
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -24,19 +24,23 @@
             </nav>
         </header>
 
-        <!-- <hr> -->
+        <h2 class="subtitulo">Se amigo de LunaBot</h2>
+        <hr>
 
-        <article class="contenedor">
+        <div class="contenedor">
             <form action="">
+
+                <div class="titulo-form">Login</div>
+
                 <label for="nombre">Nombre: </label>
-                <input type="text" name="nombre" id="nombre">
+                <input type="text" name="nombre" id="nombre" class="input" required>
 
                 <label for="email">Email: </label>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" class="input" required>
 
 
                 <label for="pais">País: </label>
-                <select name="pais" id="pais">
+                <select name="pais" id="pais" class="input" required>
                     <option value="peru">Perú</option>
                     <option value="argentina">Argentina</option>
                     <option value="bolivia">Bolivia</option>
@@ -46,13 +50,16 @@
                 </select>
 
                 <label for="comentario">Comentario: </label>
-                <textarea name="comentario" id="comentario" cols="30" rows="3">
+                <textarea name="comentario" id="comentario" cols="30" rows="3" class="input" required>
 
                 </textarea>
 
-                <button>Enviar</button>
+                <div class="boton-contenedor">
+                    <button class="boton">Enviar</button>
+                </div>
+                
             </form>
-        </article>
+        </div>
 
         <footer>
             <p>Derechos reservados &copy; 2023</p>
